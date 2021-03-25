@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2blurdark"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_100mdp"
+        android:layout_height="@dimen/_100mdp"
+        android:layout_above="@id/bLogin"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo2" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/nameTV"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_above="@+id/bLogin"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:fontFamily="@font/neelimafont"-->
+    <!--android:text="@string/neelimas_kitchen"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorPrimaryDark"-->
+    <!--android:textSize="@dimen/_30ssp" />-->
+
+    <Button
+        android:id="@+id/bLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_14mdp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/curryYellow"
+        android:elevation="@dimen/_4mdp"
+        android:fontFamily="@font/alwaystogether"
+        android:onClick="loginButton"
+        android:paddingLeft="@dimen/_28mdp"
+        android:paddingRight="@dimen/_28mdp"
+        android:text="@string/login"
+        android:textColor="@color/midnightBlue"
+        android:textSize="@dimen/_18font_mdp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bLogin"
+        android:layout_alignStart="@+id/bLogin"
+        android:layout_alignEnd="@+id/bLogin"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/_14mdp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/curryGreen"
+        android:elevation="@dimen/_4mdp"
+        android:fontFamily="@font/alwaystogether"
+        android:onClick="registerButton"
+        android:paddingLeft="@dimen/_10mdp"
+        android:paddingRight="@dimen/_10mdp"
+        android:textStyle="bold"
+        android:text="@string/register"
+        android:textColor="@color/midnightBlue"
+        android:textSize="@dimen/_18font_mdp" />
+
+</RelativeLayout>

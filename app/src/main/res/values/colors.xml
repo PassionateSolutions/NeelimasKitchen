@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFC92</color>
+    <color name="colorPrimaryDark">#34495e</color>
+    <color name="colorAccent">#34495e</color>
+    <color name="curryYellow">#FFFC92</color>
+    <color name="midnightBlue">#34495e</color>
+    <color name="midnightBlueLight">#698299</color>
+    <color name="indianRed">#CD5C5C</color>
+    <color name="curryGreen">#96D86E</color>
+    <color name="grey">#7AC0C0C0</color>
+    <color name="deleteBackground">#FA315B</color>
+    <color name="popoutRed">#FA315B</color>
+</resources>

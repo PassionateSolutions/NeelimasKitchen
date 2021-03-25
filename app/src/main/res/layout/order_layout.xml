@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/midnightBlueLight"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="@dimen/_4mdp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8mdp"
+    app:cardElevation="@dimen/_4mdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_4mdp"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginBottom="@dimen/_16mdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_2mdp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:text="Order#"
+                    android:textSize="@dimen/_16font_mdp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvOrderId"
+                    android:layout_marginLeft="@dimen/_5mdp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:text="11111"
+                    android:textSize="@dimen/_16font_mdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOrderStatus"
+                android:layout_marginLeft="@dimen/_10mdp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/_16font_mdp"
+                android:text="Pending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tvOrderPhone"
+                android:layout_marginLeft="@dimen/_10mdp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_16font_mdp"
+                android:text="5555555555"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvOrderAddress"
+                android:layout_marginLeft="@dimen/_10mdp"
+                android:gravity="center_vertical|start"
+                android:textStyle="italic"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_16font_mdp"
+                android:textColor="@android:color/white"
+                android:text="123 St. Deerfield, IL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/_4mdp"
+            android:orientation="horizontal"
+            android:layout_weight="2">
+
+            <Button
+                android:id="@+id/bUpdateOrder"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_marginRight="@dimen/_2mdp"
+                android:background="@drawable/round_corners"
+                android:backgroundTint="@color/popoutRed"
+                />
+            <Button
+                android:id="@+id/bOrderDetail"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_marginLeft="@dimen/_2mdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corners"
+                android:backgroundTint="@color/popoutRed"
+                android:text="Detail"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

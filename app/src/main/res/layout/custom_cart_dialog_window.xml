@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="@dimen/_24font_mdp"
+        android:layout_margin="@dimen/_14mdp"
+        android:fontFamily="sans-serif-thin"
+        android:textStyle="bold"
+        android:text="Order Instructions"/>
+
+    <EditText
+        android:id="@+id/etCustomDialogAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tell us date, time, and any special instructions "
+        android:padding="@dimen/_14mdp"
+        android:inputType="textPostalAddress"
+        />
+
+</LinearLayout>

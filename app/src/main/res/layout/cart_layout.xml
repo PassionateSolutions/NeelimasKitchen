@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/cardview_shadow_start_color"
+    android:layout_margin="@dimen/_8mdp"
+    app:cardCornerRadius="@dimen/_10mdp"
+    app:cardElevation="@dimen/_4mdp">
+
+    <LinearLayout
+        android:id="@+id/view_foreground"
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginBottom="@dimen/_16mdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cart_item_name"
+                android:layout_marginLeft="@dimen/_10mdp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14font_mdp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/cart_item_price"
+                android:layout_marginLeft="@dimen/_10mdp"
+                android:gravity="center_vertical|start"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_14font_mdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cart_item_count"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:layout_width="@dimen/_32mdp"
+            android:layout_height="@dimen/_32mdp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

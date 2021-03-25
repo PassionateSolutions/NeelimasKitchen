@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2blurdark"
+    tools:context=".Cart">
+
+    <TextView
+        android:id="@+id/tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4mdp"
+        android:text="Long press to delete item"
+        android:gravity="center"
+        android:fontFamily="@font/alwaystogether"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_20font_mdp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listCart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_16mdp"
+            android:layout_marginLeft="@dimen/_16mdp"
+            android:layout_marginRight="@dimen/_16mdp"
+            android:layout_above="@+id/cartCardView"
+            android:layout_below="@+id/tip"
+            android:background="@android:color/transparent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cartCardView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100mdp"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/_8mdp"
+        android:layout_margin="@dimen/_16mdp"
+        app:cardBackgroundColor="@color/midnightBlue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8mdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total:"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20font_mdp" />
+
+                <TextView
+                    android:id="@+id/tvTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_24font_mdp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bSubmitOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_14mdp"
+                android:layout_marginLeft="@dimen/_6mdp"
+                android:layout_marginRight="@dimen/_6mdp"
+                android:layout_marginBottom="@dimen/_12mdp"
+                android:background="@drawable/round_corners"
+                android:backgroundTint="@color/curryGreen"
+                android:elevation="@dimen/_4mdp"
+                android:fontFamily="@font/alwaystogether"
+                android:paddingLeft="@dimen/_28mdp"
+                android:paddingRight="@dimen/_28mdp"
+                android:text="@string/submit_order"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_24font_mdp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ivThanksGif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

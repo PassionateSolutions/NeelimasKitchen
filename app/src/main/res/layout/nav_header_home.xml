@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_176mdp"
+    android:background="@color/midnightBlueLight"
+    android:gravity="bottom"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/_16mdp"
+    android:paddingTop="@dimen/_16mdp"
+    android:paddingRight="@dimen/_16mdp"
+    android:paddingBottom="@dimen/_16mdp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/curryOn"
+        android:layout_width="@dimen/_110mdp"
+        android:layout_height="@dimen/_110mdp"
+        android:contentDescription="@string/nav_header_desc"
+        app:srcCompat="@raw/curry_on" />
+
+    <TextView
+        android:id="@+id/navFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8mdp"
+        android:textColor="@android:color/black"
+        android:text=""
+        android:fontFamily="@font/alwaystogether"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25font_mdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+</LinearLayout>

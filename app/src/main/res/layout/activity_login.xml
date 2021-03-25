@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background7blur"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:id="@+id/loginInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bEnter"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_50mdp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etNumberLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alwaystogether"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/_22font_mdp"
+            app:met_baseColor="@android:color/white"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_primaryColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/alwaystogether"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:textSize="@dimen/_22font_mdp" />
+
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/bResetProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_198mdp"
+        android:layout_above="@+id/bEnter"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:textColor="@android:color/white"
+        android:text="Reset Password"/>
+
+    
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/cbRememberMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bEnter"
+        style="@style/Material.Drawable.CheckBox"
+        android:text="Remember Me"
+        android:layout_marginStart="@dimen/_30mdp"
+        android:layout_marginBottom="@dimen/_8mdp"
+        android:paddingTop="@dimen/_4mdp"
+        app:cbd_strokeColor="@android:color/white"
+        app:cbd_tickColor="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/bEnter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8mdp"
+        android:layout_marginStart="@dimen/_8mdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_14mdp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="@color/indianRed"
+        android:elevation="@dimen/_4mdp"
+        android:fontFamily="@font/alwaystogether"
+        android:paddingLeft="@dimen/_28mdp"
+        android:paddingRight="@dimen/_28mdp"
+        android:text="@string/enter_login"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_24font_mdp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

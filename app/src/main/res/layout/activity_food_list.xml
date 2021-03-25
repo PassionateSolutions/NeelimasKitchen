@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/midnightBlue"
+    tools:context=".FoodList">
+
+
+<!--    <com.mancj.materialsearchbar.MaterialSearchBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/searchBar"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        app:mt_speechMode="false"-->
+<!--        app:mt_hint="Enter Food Here"-->
+<!--    />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/foodListRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:backgroundTint="@color/curryGreen"
+        android:layout_margin="@dimen/_16mdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_shopping_cart_black_24dp" />
+
+
+</RelativeLayout>

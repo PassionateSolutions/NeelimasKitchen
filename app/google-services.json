@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "72089934860",
+    "firebase_url": "https://neelimaskitchen.firebaseio.com",
+    "project_id": "neelimaskitchen",
+    "storage_bucket": "neelimaskitchen.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72089934860:android:33d59b071e713510",
+        "android_client_info": {
+          "package_name": "com.deepak.neelimaskitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72089934860-82eq7j9ka5hi90sf4ejbhnnb85f755j3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deepak.neelimaskitchen",
+            "certificate_hash": "d8c31c6607e0b361524badcd8fe28ef18317e6c0"
+          }
+        },
+        {
+          "client_id": "72089934860-lcvuao4hn346q3fsqpn9fo47mb1og2cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU48mXeOhzjA7SDlZTDjVKY5hpRYAcbow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72089934860-lcvuao4hn346q3fsqpn9fo47mb1og2cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardviewOrderInfo"
+    android:orientation="vertical"
+    android:backgroundTint="@color/midnightBlueLight"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8mdp"
+    app:cardElevation="@dimen/_4mdp">
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_16mdp"
+        android:layout_marginBottom="@dimen/_16mdp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_marginLeft="@dimen/_10mdp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:text="Name Is: Mutton Biryani -Half Tray"
+                    android:textSize="@dimen/_16font_mdp"
+                    android:padding="@dimen/_4mdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_8mdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/_2mdp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:text="Quantity: "
+                    android:textSize="@dimen/_16font_mdp"
+                    android:padding="@dimen/_4mdp"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvProductQuantity"
+                    android:layout_marginLeft="@dimen/_2mdp"
+                    android:gravity="center_vertical|start"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/_16font_mdp"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
